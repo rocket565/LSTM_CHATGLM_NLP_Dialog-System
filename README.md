@@ -160,7 +160,7 @@ The program then reads questions from standard input. Enter `help` for a short p
 
 `lstm_chatglm_hybrid.py` supports:
 
-| Option | Default | Description |
+| Option | Default |描述|
 | --- | --- | --- |
 | `--lstm_model` | `lstm_retriever_model/best_model.pt` | Retriever checkpoint; the script can continue with random weights if it is missing and you confirm interactively |
 | `--chatglm_model` | `zai-org/chatglm-6b` | Local ChatGLM model directory; the current CLI checks that this path exists |
@@ -211,4 +211,4 @@ ChatGLM-6B weights can also be obtained from the model provider and passed throu
 - Retrieval quality depends on the quality and coverage of the paired question/context data.
 - The complete knowledge base is encoded in memory at startup; very large collections may require batching or an approximate nearest-neighbor index.
 - The generator is prompted to answer only from the retrieved material, but generated text should still be reviewed for factuality.
-- No license file is currently included. Add a license before redistributing the project or its model/data assets.
+- No license file is currently included. 
